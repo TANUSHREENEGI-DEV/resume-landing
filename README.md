@@ -1,68 +1,80 @@
-# ResumeFlow — Landing Page
+# ResumeFlow Landing Page
 
-A marketing homepage for an imaginary resume-builder product called **ResumeFlow**.
-Built as a weekend PRD exercise: read a written spec, matched its structure and
-visual style exactly, and shipped it to GitHub Pages.
+This is my weekend project for the internship. My mentor gave me a PRD — a
+proper spec document, like what you'd get handed on a real job — and the
+whole point was to read it carefully and build exactly what it asked for,
+not what I assumed it meant. No skipping sections, no shortcuts.
 
-## What this page is
+## What this project is
 
-A single-page site pitching ResumeFlow to job seekers. It follows the reference
-page's section order and dark, violet-accented visual style, rebuilt from
-scratch in plain HTML, CSS, and a small amount of JavaScript — no frameworks,
-no copied code.
+ResumeFlow is a made-up product — a resume-builder tool. This page is its
+marketing homepage, the kind of page you'd land on before signing up. It's
+not a real product, it's a practice run for a bigger resume-building tool
+we're going to build later in the internship. The idea was to treat it like
+the "front door" of a real product, something that would actually make
+someone want to click Get Started.
 
-**Sections, top to bottom:**
+My mentor gave me a reference site to study — not to copy, but to understand
+how a page like this is usually structured: what sections it has, what order
+they come in, what the visual style feels like. I opened it, looked at the
+layout, the spacing, the colours, then closed it and wrote my own HTML and
+CSS from scratch. Nothing here is copied from the reference's source code.
 
-1. Navigation bar
-2. Hero (headline, description, primary CTA, reassurance line)
-3. Stats strip (4 quick numbers)
-4. Features (6 cards)
-5. Templates (3 preview cards)
-6. Testimonials (3 quote cards)
-7. Call-to-action band
-8. FAQ (4 question/answer pairs)
-9. Footer (brand, grouped links, copyright)
+## Sections (in order)
 
-## Tech
+The PRD required these 9 sections, top to bottom, and I followed that order
+exactly:
 
-- **HTML** — semantic tags throughout (`header`, `nav`, `main`, `section`,
-  `article`, `footer`); one `h1`, then `h2`s for each section heading.
-- **CSS** — all styling lives in `style.css`, linked from `<head>`. No inline
-  styles, no `<style>` block. Layout uses Flexbox and CSS Grid, and stacks
-  cleanly on mobile widths.
-- **JavaScript** — `script.js` uses `querySelector` + `textContent` to set the
-  footer year and the hero headline from JS. No event handlers yet — that's
-  next week's topic.
+1. **Navigation bar** — logo on the left, nav links (Features, Templates,
+   FAQ) and a Get Started button on the right
+2. **Hero** — a big headline, a short description, the main CTA button, and
+   a small reassurance line under it ("No credit card needed")
+3. **Stats strip** — 4 quick numbers with labels, like resumes created and
+   user rating
+4. **Features** — a heading plus 6 cards, each with an icon, a title, and
+   one line describing it
+5. **Templates** — a heading plus 3 template preview cards
+6. **Testimonials** — a heading plus 3 review cards with stars, a quote, and
+   a name/role
+7. **Call-to-action band** — one last push before the footer, with its own
+   button
+8. **FAQ** — 4 question and answer pairs
+9. **Footer** — logo, tagline, grouped links (Product / Company / Legal),
+   and a copyright line
 
-## Design
+## How I built it
 
-- **Theme:** near-black background (`#0a0a0f`) with white text
-- **Accent:** violet/indigo (`#7c5cff`), used consistently for buttons, links,
-  and highlights
-- **Cards:** rounded corners (16px), soft borders, generous padding
-- **Type:** Inter (Google Font), large bold headings, one body size scale
+- **Semantic HTML** — I used `header`, `nav`, `main`, `section`, `article`,
+  and `footer` properly instead of wrapping everything in generic divs. Divs
+  only show up where there genuinely isn't a semantic tag that fits, like
+  the grid wrapper around a set of cards.
+- **External CSS** — everything is in `style.css`, linked from the head. No
+  inline styles anywhere, no `<style>` block sitting in the HTML.
+- **Responsive layout** — built with Flexbox and CSS Grid, with media
+  queries so the page doesn't fall apart on a phone. Cards stack into a
+  single column on small screens instead of squeezing sideways.
+- **Accessibility basics** — there's exactly one `h1` on the page (the hero
+  headline), and every image has real alt text describing what it is.
+- **JavaScript, kept small on purpose** — we haven't covered events yet, so
+  `script.js` doesn't have any click handlers or listeners. It just uses
+  `querySelector` and `textContent` to set the footer year and the hero
+  headline directly from JS, which was enough to show I can reach into the
+  page and change it programmatically.
 
-Colours were sampled directly from the reference page using the browser
-DevTools colour picker.
+## Design choices
+
+Dark, near-black background with white text, and one accent colour — a
+purple/violet — used consistently across every button, link, and highlight.
+I got the exact shade by opening the reference site, pressing F12, and using
+the DevTools colour picker to sample it directly rather than guessing.
+Cards throughout (features, templates, testimonials, FAQ) all share the same
+rounded corners, soft borders, and generous padding, so the whole page feels
+consistent instead of like separate pieces stitched together.
 
 ## Screenshot
 
-![ResumeFlow landing page screenshot](images/screenshot.png)
-
-*(Screenshot added after deploying to GitHub Pages — see note below.)*
-
-## Running locally
-
-Clone the repo and open `index.html` in a browser — no build step required.
-
-```bash
-git clone https://github.com/TANUSHREENEGI-DEV/resume-landing.git
-cd resume-landing
-```
-
-Then just open `index.html`.
+![Screenshot of my ResumeFlow landing page](images/screenshot.png)
 
 ## Live site
 
-Deployed with GitHub Pages: _add your live link here after enabling Pages in
-repo settings._
+https://tanushreenegi-dev.github.io/resume-landing/
