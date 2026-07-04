@@ -1,6 +1,6 @@
 /* -------------------------------------------------
    ResumeFlow — style.css
-   Dark theme, single violet accent, rounded cards
+   Dark theme, teal-to-blue gradient accent, rounded cards
 ------------------------------------------------- */
 
 :root {
@@ -10,9 +10,11 @@
   --card-border: #26262f;
   --text: #f2f2f5;
   --text-muted: #a3a3af;
-  --accent: #7c5cff;
-  --accent-hover: #6a49f2;
-  --accent-soft: rgba(124, 92, 255, 0.12);
+  --accent: #14b8a6;
+  --accent-2: #3b82f6;
+  --accent-hover: #0d9488;
+  --accent-soft: rgba(20, 184, 166, 0.12);
+  --accent-gradient: linear-gradient(90deg, #14b8a6, #3b82f6);
   --radius: 16px;
   --max-width: 1160px;
 }
@@ -26,7 +28,7 @@
 body {
   background-color: var(--bg);
   color: var(--text);
-  font-family: "Inter", system-ui, -apple-system, sans-serif;
+  font-family: "Poppins", system-ui, -apple-system, sans-serif;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
 }
@@ -74,12 +76,12 @@ h2 {
 }
 
 .btn-primary {
-  background-color: var(--accent);
+  background: var(--accent-gradient);
   color: #ffffff;
 }
 
 .btn-primary:hover {
-  background-color: var(--accent-hover);
+  filter: brightness(1.08);
   transform: translateY(-1px);
 }
 
@@ -117,6 +119,10 @@ h2 {
   font-size: 1.35rem;
   font-weight: 800;
   letter-spacing: -0.02em;
+  background: var(--accent-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 .nav-links {
@@ -162,6 +168,14 @@ h2 {
   margin: 0 auto 24px;
 }
 
+.hero h1 .highlight {
+  font-weight: inherit;
+  background: var(--accent-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
 .hero-description {
   color: var(--text-muted);
   font-size: 1.2rem;
@@ -195,7 +209,22 @@ h2 {
 .stat-number {
   font-size: 2rem;
   font-weight: 800;
-  color: var(--accent);
+}
+
+.stat-teal {
+  color: #14b8a6;
+}
+
+.stat-blue {
+  color: #3b82f6;
+}
+
+.stat-purple {
+  color: #a855f7;
+}
+
+.stat-pink {
+  color: #ec4899;
 }
 
 .stat-label {
@@ -232,6 +261,52 @@ h2 {
 }
 
 .features .card p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+/* How It Works */
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 56px;
+}
+
+.step-card {
+  text-align: center;
+  padding: 32px 24px;
+}
+
+.step-number {
+  width: 48px;
+  height: 48px;
+  line-height: 48px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 1.2rem;
+}
+
+.step-card:nth-child(1) .step-number {
+  background: linear-gradient(135deg, #14b8a6, #3b82f6);
+}
+
+.step-card:nth-child(2) .step-number {
+  background: linear-gradient(135deg, #3b82f6, #a855f7);
+}
+
+.step-card:nth-child(3) .step-number {
+  background: linear-gradient(135deg, #a855f7, #ec4899);
+}
+
+.step-card h3 {
+  font-size: 1.15rem;
+  margin-bottom: 10px;
+}
+
+.step-card p {
   color: var(--text-muted);
   font-size: 0.95rem;
 }
@@ -328,17 +403,40 @@ h2 {
   background-color: var(--card-bg);
   border: 1px solid var(--card-border);
   border-radius: var(--radius);
-  padding: 24px 28px;
+  padding: 4px 28px;
 }
 
-.faq-item h3 {
+.faq-item details {
+  padding: 20px 0;
+}
+
+.faq-item summary {
   font-size: 1.05rem;
-  margin-bottom: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  list-style: none;
 }
 
-.faq-item p {
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item summary::after {
+  content: "+";
+  float: right;
+  color: var(--accent);
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.faq-item details[open] summary::after {
+  content: "−";
+}
+
+.faq-item details p {
   color: var(--text-muted);
   font-size: 0.95rem;
+  margin-top: 14px;
 }
 
 /* Footer */
@@ -411,6 +509,11 @@ h2 {
 
   .card-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .steps-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
   }
 
   .hero h1 {

@@ -7,7 +7,7 @@
   <meta name="description" content="Create a stunning resume in minutes with ResumeFlow. Professional templates, easy editing, and instant export. Free forever." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -17,6 +17,7 @@
       <a href="#" class="logo">ResumeFlow</a>
       <ul class="nav-links">
         <li><a href="#features">Features</a></li>
+        <li><a href="#how-it-works">How It Works</a></li>
         <li><a href="#templates">Templates</a></li>
         <li><a href="#faq">FAQ</a></li>
       </ul>
@@ -28,8 +29,8 @@
 
     <!-- Hero -->
     <section class="hero">
-      <p class="eyebrow">✨ Built for job seekers who mean business</p>
-      <h1 id="hero-headline">Your Perfect Resume in Minutes</h1>
+      <p class="eyebrow" id="hero-eyebrow"></p>
+      <h1 id="hero-headline">Your Perfect Resume <strong class="highlight">in Minutes</strong></h1>
       <p class="hero-description">
         Stop wrestling with templates. ResumeFlow uses AI-powered design to create
         stunning resumes that get you noticed by recruiters.
@@ -41,19 +42,19 @@
     <!-- Stats strip -->
     <section class="stats" aria-label="ResumeFlow usage statistics">
       <article class="stat-card">
-        <p class="stat-number">50K+</p>
+        <p class="stat-number stat-teal">50K+</p>
         <p class="stat-label">Resumes Created</p>
       </article>
       <article class="stat-card">
-        <p class="stat-number">92%</p>
+        <p class="stat-number stat-blue">92%</p>
         <p class="stat-label">Job Interview Rate</p>
       </article>
       <article class="stat-card">
-        <p class="stat-number">4.9/5</p>
+        <p class="stat-number stat-purple">4.9/5</p>
         <p class="stat-label">User Rating</p>
       </article>
       <article class="stat-card">
-        <p class="stat-number">24/7</p>
+        <p class="stat-number stat-pink">24/7</p>
         <p class="stat-label">Support Available</p>
       </article>
     </section>
@@ -93,6 +94,30 @@
           <img src="images/icon-share.svg" alt="Link icon" class="card-icon" />
           <h3>One-Click Share</h3>
           <p>Share your resume with a link — no downloads needed.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works" id="how-it-works">
+      <h2>How It Works</h2>
+      <p class="section-subtitle">Three simple steps and you're ready to apply</p>
+
+      <div class="steps-grid">
+        <article class="step-card">
+          <p class="step-number">1</p>
+          <h3>Pick a Template</h3>
+          <p>Browse the library and choose a layout that fits the role you're applying for.</p>
+        </article>
+        <article class="step-card">
+          <p class="step-number">2</p>
+          <h3>Add Your Details</h3>
+          <p>Fill in your experience, skills, and education — ResumeFlow handles the formatting.</p>
+        </article>
+        <article class="step-card">
+          <p class="step-number">3</p>
+          <h3>Export and Apply</h3>
+          <p>Download your finished resume and start sending applications the same day.</p>
         </article>
       </div>
     </section>
@@ -168,20 +193,28 @@
 
       <div class="faq-list">
         <article class="faq-item">
-          <h3>Is ResumeFlow really free forever?</h3>
-          <p>Yes! ResumeFlow is completely free with unlimited resumes. Premium features are coming soon for advanced users.</p>
+          <details>
+            <summary>Is ResumeFlow really free forever?</summary>
+            <p>Yes! ResumeFlow is completely free with unlimited resumes. Premium features are coming soon for advanced users.</p>
+          </details>
         </article>
         <article class="faq-item">
-          <h3>Will my resume pass ATS systems?</h3>
-          <p>Absolutely. All templates are optimized and tested to pass applicant tracking systems used by major companies.</p>
+          <details>
+            <summary>Will my resume pass ATS systems?</summary>
+            <p>Absolutely. All templates are optimized and tested to pass applicant tracking systems used by major companies.</p>
+          </details>
         </article>
         <article class="faq-item">
-          <h3>Can I customize the templates completely?</h3>
-          <p>Yes! You have full control over colors, fonts, spacing, sections, and layout — make it uniquely yours.</p>
+          <details>
+            <summary>Can I customize the templates completely?</summary>
+            <p>Yes! You have full control over colors, fonts, spacing, sections, and layout — make it uniquely yours.</p>
+          </details>
         </article>
         <article class="faq-item">
-          <h3>Is my data secure and private?</h3>
-          <p>Your data is encrypted end-to-end and stored securely. You can delete everything anytime with one click.</p>
+          <details>
+            <summary>Is my data secure and private?</summary>
+            <p>Your data is encrypted end-to-end and stored securely. You can delete everything anytime with one click.</p>
+          </details>
         </article>
       </div>
     </section>

@@ -4,5 +4,5 @@
 const yearEl = document.querySelector("#year");
 yearEl.textContent = new Date().getFullYear();
 
-const headlineEl = document.querySelector("#hero-headline");
-headlineEl.textContent = "Your Perfect Resume in Minutes";
+const eyebrowEl = document.querySelector("#hero-eyebrow");
+eyebrowEl.textContent = "✨ Built for job seekers who mean business";
