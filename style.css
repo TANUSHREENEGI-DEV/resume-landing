@@ -1,7 +1,4 @@
-/* -------------------------------------------------
-   ResumeFlow — style.css
-   Dark theme, teal-to-blue gradient accent, rounded cards
-------------------------------------------------- */
+/* ResumeFlow styles - dark theme, teal/blue accents */
 
 :root {
   --bg: #0a0a0f;
@@ -212,11 +209,11 @@ h2 {
 }
 
 .stat-teal {
-  color: #14b8a6;
+  color: var(--accent);
 }
 
 .stat-blue {
-  color: #3b82f6;
+  color: var(--accent-2);
 }
 
 .stat-purple {
@@ -290,11 +287,11 @@ h2 {
 }
 
 .step-card:nth-child(1) .step-number {
-  background: linear-gradient(135deg, #14b8a6, #3b82f6);
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
 }
 
 .step-card:nth-child(2) .step-number {
-  background: linear-gradient(135deg, #3b82f6, #a855f7);
+  background: linear-gradient(135deg, var(--accent-2), #a855f7);
 }
 
 .step-card:nth-child(3) .step-number {
