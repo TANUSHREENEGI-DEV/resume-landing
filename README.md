@@ -1,62 +1,104 @@
 # ResumeFlow Landing Page
 
-This is my weekend project for the internship. My mentor gave me a PRD (a
-proper spec document) and I had to build exactly what it said, no guessing.
+A responsive landing page for a fictional resume builder called **ResumeFlow**. This project was built as part of my internship assignment by following the provided PRD and recreating the reference design as closely as possible using HTML, CSS, and JavaScript.
 
-## What this is
+## 🌐 Live Demo
 
-ResumeFlow is a fake product, just a resume builder. This is its homepage,
-built as practice before we build the real resume tool later in the
-internship. My mentor gave me a reference site to look at — not to copy the
-code, just to see how it's structured. So I looked at it, then wrote
-everything myself.
+👉 **[View Live Project](https://tanushreenegi-dev.github.io/resume-landing/)**
 
-After I submitted the first version, my mentor said the colors, fonts, and
-a couple sections needed to match the reference more closely. So I went
-back and changed the accent color to a teal-blue gradient, switched the
-font to Poppins, and added a "How It Works" section I didn't have before.
+---
 
-## Sections
+## 📖 About the Project
 
-1. Navbar
-2. Hero
-3. Stats
-4. Features (6 cards)
-5. How It Works (3 steps)
-6. Templates (3 cards)
-7. Testimonials (3 cards)
-8. CTA section
-9. FAQ (4 questions)
-10. Footer
+The goal of this assignment was to recreate a professional landing page while following the given PRD and reference design. I focused on writing clean, semantic HTML, keeping the layout responsive, and organizing the code properly by separating HTML, CSS, and JavaScript.
 
-## What I used
+After completing the project, I reviewed my work, fixed the issues pointed out during feedback, and updated the project accordingly.
 
-- **HTML** — real semantic tags (header, nav, main, section, article,
-  footer) instead of divs everywhere. Only used div where nothing else made
-  sense, like the grid wrapper for the cards.
-- **CSS** — everything in style.css, no inline styles.
-- **Responsive** — Flexbox and Grid, with media queries so it doesn't break
-  on phones.
-- **JS** — kept it small since we haven't done events yet. script.js just
-  sets the footer year and the hero eyebrow text using querySelector and
-  textContent.
-- **FAQ** — used the details/summary HTML tags for the accordion instead of
-  JavaScript. The browser handles the open/close on its own, no events
-  needed.
+---
 
-## Colors and fonts
+## ✨ Features
 
-Dark background, teal-to-blue gradient on the logo, buttons, and part of the
-headline. Stats numbers each have a different color (teal, blue, purple,
-pink) instead of all being the same. Font is Poppins.
+- Responsive landing page
+- Sticky navigation bar
+- Hero section with call-to-action
+- Trusted companies section
+- Statistics cards
+- Features section
+- How It Works section
+- Resume template cards
+- Success stories/testimonials
+- FAQ section using `<details>` and `<summary>`
+- Responsive footer
+- Current year displayed automatically using JavaScript
 
-## Screenshot
+---
 
-![screenshot of my ResumeFlow landing page](images/screenshot.png)
+## 🛠️ Technologies Used
 
-## Live site
+- HTML5
+- CSS3
+- CSS Grid
+- Flexbox
+- Vanilla JavaScript
 
-https://tanushreenegi-dev.github.io/resume-landing/
+---
 
+## 📂 Folder Structure
 
+```text
+resume-landing/
+│── index.html
+│── style.css
+│── script.js
+│── README.md
+└── images/
+```
 
+---
+
+## 📚 What I Learned
+
+Working on this project helped me understand how a complete landing page is built from scratch.
+
+Some of the things I learned are:
+
+- Writing cleaner and more meaningful HTML using semantic elements.
+- Understanding where Flexbox works better and where CSS Grid is more suitable.
+- Creating reusable CSS styles instead of repeating code.
+- Using CSS variables to keep colors and spacing consistent throughout the project.
+- Making the layout responsive using media queries.
+- Keeping HTML, CSS, and JavaScript in separate files for better organization.
+- Using JavaScript for simple dynamic functionality like automatically displaying the current year in the footer.
+- Testing the deployed website and fixing issues after receiving feedback.
+
+---
+
+## 🚧 Challenges I Faced
+
+While building this project, I faced a few challenges that helped me learn more about frontend development.
+
+- Matching the layout with the reference design.
+- Managing spacing and alignment across different sections.
+- Making every section responsive on different screen sizes.
+- Debugging the JavaScript when the footer year wasn't displaying correctly.
+- Reviewing the project carefully and making improvements based on mentor feedback.
+
+Working through these issues improved both my debugging skills and my understanding of writing cleaner code.
+
+---
+
+## 🚀 Future Improvements
+
+If I continue working on this project, I would like to:
+
+- Add smooth scrolling animations.
+- Turn the landing page into a functional resume builder.
+- Improve accessibility further.
+- Add a dark/light mode toggle.
+- Connect the form to a backend.
+
+---
+
+## 🙏 Acknowledgement
+
+This project was completed as part of my internship assignment. It helped me strengthen my understanding of semantic HTML, responsive CSS layouts, JavaScript basics, debugging, and deploying projects using GitHub Pages.
