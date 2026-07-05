@@ -1,5 +1,3 @@
-/* ResumeFlow styles - dark theme, teal/blue accents */
-
 :root {
   --bg: #0a0a0f;
   --bg-alt: #111117;
@@ -63,7 +61,6 @@ h2 {
   font-size: 1.05rem;
 }
 
-/* Buttons */
 .btn {
   display: inline-block;
   border-radius: 10px;
@@ -92,7 +89,6 @@ h2 {
   font-size: 1.05rem;
 }
 
-/* Header / Nav */
 .site-header {
   border-bottom: 1px solid var(--card-border);
   background-color: rgba(10, 10, 15, 0.85);
@@ -140,7 +136,6 @@ h2 {
   color: var(--text);
 }
 
-/* Hero */
 .hero {
   text-align: center;
   padding-top: 120px;
@@ -186,7 +181,49 @@ h2 {
   margin-top: 16px;
 }
 
-/* Stats strip */
+.trusted-by {
+  text-align: center;
+  padding-top: 0;
+  padding-bottom: 64px;
+}
+
+.trusted-by-label {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 28px;
+}
+
+.logo-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 24px;
+}
+
+.logo-list li {
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: var(--text-muted);
+  opacity: 0.75;
+  transition: opacity 0.2s ease, color 0.2s ease;
+}
+
+.logo-list li:hover {
+  opacity: 1;
+  color: var(--text);
+}
+
+.trusted-by-rating {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
 .stats {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -230,7 +267,6 @@ h2 {
   margin-top: 6px;
 }
 
-/* Card grid (shared by features, templates, testimonials) */
 .card-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -245,7 +281,6 @@ h2 {
   padding: 32px;
 }
 
-/* Features */
 .card-icon {
   width: 40px;
   height: 40px;
@@ -262,7 +297,6 @@ h2 {
   font-size: 0.95rem;
 }
 
-/* How It Works */
 .steps-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -308,7 +342,6 @@ h2 {
   font-size: 0.95rem;
 }
 
-/* Templates */
 .template-preview {
   height: 160px;
   border-radius: 10px;
@@ -345,7 +378,6 @@ h2 {
   border-radius: 999px;
 }
 
-/* Testimonials */
 .stars {
   color: var(--accent);
   font-size: 1.1rem;
@@ -367,7 +399,6 @@ h2 {
   font-size: 0.85rem;
 }
 
-/* CTA band */
 .cta-band {
   text-align: center;
   background-color: var(--card-bg);
@@ -387,7 +418,6 @@ h2 {
   margin: 0 auto 32px;
 }
 
-/* FAQ */
 .faq-list {
   max-width: 720px;
   margin: 56px auto 0;
@@ -436,7 +466,6 @@ h2 {
   margin-top: 14px;
 }
 
-/* Footer */
 .site-footer {
   border-top: 1px solid var(--card-border);
   padding: 64px 24px 32px;
@@ -495,10 +524,6 @@ h2 {
   padding-top: 24px;
 }
 
-/* -------------------------------------------------
-   Responsive
-------------------------------------------------- */
-
 @media (max-width: 900px) {
   .stats {
     grid-template-columns: repeat(2, 1fr);
@@ -549,6 +574,14 @@ h2 {
 
   .stats {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .logo-list {
+    gap: 24px;
+  }
+
+  .logo-list li {
+    font-size: 1rem;
   }
 
   .card-grid {
