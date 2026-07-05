@@ -1,6 +1,8 @@
 # ResumeFlow Landing Page
 
-A responsive landing page for a fictional resume builder called **ResumeFlow**. This project was built as part of my internship assignment by following the provided PRD and recreating the reference design as closely as possible using HTML, CSS, and JavaScript.
+A responsive and modern landing page for a fictional resume builder called **ResumeFlow**. This project was built as part of my internship assignment by following the provided PRD and recreating the reference design as closely as possible using semantic HTML, CSS, and vanilla JavaScript.
+
+---
 
 ## 🌐 Live Demo
 
@@ -8,11 +10,17 @@ A responsive landing page for a fictional resume builder called **ResumeFlow**. 
 
 ---
 
+## 📸 Project Preview
+
+![ResumeFlow Landing Page](images/screenshot.png)
+
+---
+
 ## 📖 About the Project
 
-The goal of this assignment was to recreate a professional landing page while following the given PRD and reference design. I focused on writing clean, semantic HTML, keeping the layout responsive, and organizing the code properly by separating HTML, CSS, and JavaScript.
+The objective of this assignment was to recreate a professional landing page by carefully following the given PRD and reference design. I focused on writing clean, semantic HTML, creating a responsive layout, and organizing the code into separate HTML, CSS, and JavaScript files.
 
-After completing the project, I reviewed my work, fixed the issues pointed out during feedback, and updated the project accordingly.
+After completing the project, I reviewed the feedback, fixed the suggested issues, and updated the project to improve both functionality and code quality.
 
 ---
 
@@ -29,7 +37,7 @@ After completing the project, I reviewed my work, fixed the issues pointed out d
 - Success stories/testimonials
 - FAQ section using `<details>` and `<summary>`
 - Responsive footer
-- Current year displayed automatically using JavaScript
+- Automatically displays the current year using JavaScript
 
 ---
 
@@ -52,38 +60,44 @@ resume-landing/
 │── script.js
 │── README.md
 └── images/
+    ├── screenshot.png
+    ├── icon-ats.svg
+    ├── icon-fast.svg
+    ├── icon-mobile.svg
+    ├── icon-share.svg
+    └── icon-target.svg
 ```
 
 ---
 
 ## 📚 What I Learned
 
-Working on this project helped me understand how a complete landing page is built from scratch.
+Working on this project gave me practical experience in building a complete landing page from scratch.
 
 Some of the things I learned are:
 
 - Writing cleaner and more meaningful HTML using semantic elements.
 - Understanding where Flexbox works better and where CSS Grid is more suitable.
-- Creating reusable CSS styles instead of repeating code.
-- Using CSS variables to keep colors and spacing consistent throughout the project.
-- Making the layout responsive using media queries.
-- Keeping HTML, CSS, and JavaScript in separate files for better organization.
-- Using JavaScript for simple dynamic functionality like automatically displaying the current year in the footer.
-- Testing the deployed website and fixing issues after receiving feedback.
+- Organizing CSS into reusable styles instead of repeating code.
+- Using CSS variables to maintain consistent colors and spacing.
+- Making the website responsive using media queries.
+- Keeping HTML, CSS, and JavaScript in separate files for better code organization.
+- Using JavaScript to add small dynamic features like automatically displaying the current year in the footer.
+- Testing the live deployment and fixing issues after receiving feedback.
 
 ---
 
 ## 🚧 Challenges I Faced
 
-While building this project, I faced a few challenges that helped me learn more about frontend development.
+While building this project, I came across a few challenges.
 
 - Matching the layout with the reference design.
-- Managing spacing and alignment across different sections.
+- Maintaining proper spacing and alignment throughout the page.
 - Making every section responsive on different screen sizes.
 - Debugging the JavaScript when the footer year wasn't displaying correctly.
-- Reviewing the project carefully and making improvements based on mentor feedback.
+- Reviewing the project and implementing improvements based on mentor feedback.
 
-Working through these issues improved both my debugging skills and my understanding of writing cleaner code.
+Solving these challenges helped me improve my debugging skills and understand the importance of testing before submitting a project.
 
 ---
 
@@ -95,10 +109,10 @@ If I continue working on this project, I would like to:
 - Turn the landing page into a functional resume builder.
 - Improve accessibility further.
 - Add a dark/light mode toggle.
-- Connect the form to a backend.
+- Connect the form with a backend.
 
 ---
 
 ## 🙏 Acknowledgement
 
-This project was completed as part of my internship assignment. It helped me strengthen my understanding of semantic HTML, responsive CSS layouts, JavaScript basics, debugging, and deploying projects using GitHub Pages.
+This project was completed as part of my internship assignment. It helped me strengthen my understanding of semantic HTML, responsive layouts, CSS Grid, Flexbox, JavaScript basics, debugging, and deploying projects using GitHub Pages.
