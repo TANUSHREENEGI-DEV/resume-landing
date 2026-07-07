@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Create Account · ResumeFlow</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="auth.css">
+</head>
+<body>
+
+<main class="auth-shell">
+
+  <section class="auth-form-side">
+    <article class="auth-card">
+
+      <a href="index.html" class="auth-brand">ResumeFlow</a>
+
+      <hgroup class="auth-heading">
+        <h1>Create account</h1>
+        <p>Already a member? <a href="login.html">Sign in</a></p>
+      </hgroup>
+
+      <button type="button" class="btn-google">Continue with Google</button>
+
+      <p class="auth-divider">or sign up with email</p>
+
+      <form id="registerForm" novalidate>
+
+        <fieldset class="field">
+          <label for="fullName">Full name</label>
+          <input type="text" id="fullName" name="fullName" placeholder="Your name" required>
+        </fieldset>
+
+        <fieldset class="field">
+          <label for="registerEmail">Email address</label>
+          <input type="email" id="registerEmail" name="email" placeholder="you@example.com" required>
+        </fieldset>
+
+        <fieldset class="field">
+          <label for="registerPassword">Password</label>
+          <input type="password" id="registerPassword" name="password" placeholder="At least 8 characters" required minlength="8">
+          <button type="button" class="toggle-visibility" id="toggleRegisterPassword">Show</button>
+          <p class="field-hint">Use 8+ characters with a mix of letters and numbers.</p>
+        </fieldset>
+
+        <label class="checkbox-row">
+          <input type="checkbox" id="agreeTerms" name="agree" required>
+          I agree to the Terms and Privacy Policy
+        </label>
+
+        <button type="submit" class="btn-primary">Create account</button>
+      </form>
+
+      <p class="auth-footnote">
+        Already building your resume? <a href="login.html">Sign in instead</a>.
+      </p>
+
+    </article>
+  </section>
+
+  <aside class="auth-visual-side">
+    <hgroup class="visual-copy">
+      <h2>Start building.</h2>
+      <p>Create your account and turn your experience into a resume that stands out.</p>
+    </hgroup>
+
+    <figure class="resume-card-visual">
+      <svg viewBox="0 0 260 220" xmlns="http://www.w3.org/2000/svg">
+        <rect x="10" y="10" width="240" height="200" rx="18" fill="#ffffff"/>
+        <circle cx="46" cy="52" r="18" fill="#2563eb"/>
+        <rect x="30" y="86" width="200" height="9" rx="4.5" fill="#e4e7ec"/>
+        <rect x="30" y="106" width="140" height="9" rx="4.5" fill="#e4e7ec"/>
+        <rect x="30" y="126" width="200" height="9" rx="4.5" fill="#e4e7ec"/>
+        <rect x="30" y="150" width="90" height="11" rx="5.5" fill="#2563eb"/>
+        <circle cx="228" cy="188" r="24" fill="#ffffff" stroke="#f1f3f5" stroke-width="1"/>
+        <path d="M228 178v20M218 188h20" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+      </svg>
+      <figcaption class="sr-only">Illustration of a new resume being created</figcaption>
+    </figure>
+  </aside>
+
+</main>
+
+<script>
+  const toggleBtn = document.querySelector('#toggleRegisterPassword');
+  const passwordInput = document.querySelector('#registerPassword');
+
+  toggleBtn.addEventListener('click', function () {
+    const isHidden = passwordInput.type === 'password';
+    passwordInput.type = isHidden ? 'text' : 'password';
+    toggleBtn.textContent = isHidden ? 'Hide' : 'Show';
+  });
+
+  document.querySelector('#registerForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+    alert('This is a front-end demo — registration isn\'t connected to a server yet.');
+  });
+</script>
+
+</body>
+</html>
