@@ -12,19 +12,59 @@
 
 <main class="auth-shell">
 
+  <aside class="auth-illustration-side">
+    <a href="index.html" class="auth-brand">ResumeFlow</a>
+
+    <figure class="illustration-figure">
+      <svg viewBox="0 0 420 480" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="210" cy="230" r="150" fill="none" stroke="#27272a" stroke-width="1.5" stroke-dasharray="4 6"/>
+
+        <rect x="130" y="120" width="160" height="210" rx="16" fill="#131318" stroke="#27272a" stroke-width="1.5"/>
+        <circle cx="160" cy="150" r="12" fill="#3b82f6"/>
+        <rect x="182" y="144" width="60" height="7" rx="3.5" fill="#3f3f46"/>
+        <rect x="182" y="158" width="40" height="7" rx="3.5" fill="#3f3f46"/>
+        <rect x="150" y="184" width="140" height="6" rx="3" fill="#27272a"/>
+        <rect x="150" y="200" width="140" height="6" rx="3" fill="#27272a"/>
+        <rect x="150" y="216" width="90" height="6" rx="3" fill="#27272a"/>
+        <rect x="150" y="242" width="70" height="9" rx="4.5" fill="#3b82f6"/>
+        <rect x="150" y="264" width="140" height="6" rx="3" fill="#27272a"/>
+        <rect x="150" y="280" width="140" height="6" rx="3" fill="#27272a"/>
+        <rect x="150" y="296" width="100" height="6" rx="3" fill="#27272a"/>
+
+        <circle cx="90" cy="140" r="26" fill="#131318" stroke="#2dd4bf" stroke-width="1.5"/>
+        <path d="M90 128v24M78 140h24" stroke="#2dd4bf" stroke-width="3" stroke-linecap="round"/>
+
+        <rect x="316" y="90" width="52" height="52" rx="14" fill="#131318" stroke="#3b82f6" stroke-width="1.5" transform="rotate(8 342 116)"/>
+        <text x="342" y="122" font-family="monospace" font-size="16" fill="#3b82f6" text-anchor="middle" transform="rotate(8 342 116)">&lt;/&gt;</text>
+
+        <rect x="60" y="330" width="60" height="60" rx="16" fill="#131318" stroke="#2dd4bf" stroke-width="1.5" transform="rotate(-6 90 360)"/>
+        <path d="M78 372l7-16 7 10 6-20 7 26" stroke="#2dd4bf" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none" transform="rotate(-6 90 360)"/>
+
+        <circle cx="330" cy="360" r="28" fill="#131318" stroke="#3b82f6" stroke-width="1.5"/>
+        <path d="M330 346l4.5 9.5 10.5 1.5-7.6 7.4 1.8 10.6-9.2-4.8-9.2 4.8 1.8-10.6-7.6-7.4 10.5-1.5z" fill="#3b82f6"/>
+
+        <circle cx="60" cy="230" r="4" fill="#3f3f46"/>
+        <circle cx="360" cy="230" r="4" fill="#3f3f46"/>
+        <circle cx="210" cy="70" r="4" fill="#3f3f46"/>
+      </svg>
+      <figcaption class="sr-only">Illustration of a new resume being created, surrounded by progress badges</figcaption>
+    </figure>
+  </aside>
+
   <section class="auth-form-side">
     <article class="auth-card">
 
-      <a href="index.html" class="auth-brand">ResumeFlow</a>
-
       <hgroup class="auth-heading">
-        <h1>Create account</h1>
+        <h1>Create Account</h1>
         <p>Already a member? <a href="login.html">Sign in</a></p>
       </hgroup>
 
-      <button type="button" class="btn-google">Continue with Google</button>
+      <p class="social-row">
+        <button type="button" class="btn-social google">Sign up with Google</button>
+        <button type="button" class="btn-social github">Sign up with GitHub</button>
+      </p>
 
-      <p class="auth-divider">or sign up with email</p>
+      <p class="auth-divider">or</p>
 
       <form id="registerForm" novalidate>
 
@@ -42,44 +82,17 @@
           <label for="registerPassword">Password</label>
           <input type="password" id="registerPassword" name="password" placeholder="At least 8 characters" required minlength="8">
           <button type="button" class="toggle-visibility" id="toggleRegisterPassword">Show</button>
-          <p class="field-hint">Use 8+ characters with a mix of letters and numbers.</p>
         </fieldset>
 
-        <label class="checkbox-row">
-          <input type="checkbox" id="agreeTerms" name="agree" required>
-          I agree to the Terms and Privacy Policy
-        </label>
-
-        <button type="submit" class="btn-primary">Create account</button>
+        <button type="submit" class="btn-primary">Create Account</button>
       </form>
 
       <p class="auth-footnote">
-        Already building your resume? <a href="login.html">Sign in instead</a>.
+        Already have an account? <a href="login.html">Log in</a>
       </p>
 
     </article>
   </section>
-
-  <aside class="auth-visual-side">
-    <hgroup class="visual-copy">
-      <h2>Start building.</h2>
-      <p>Create your account and turn your experience into a resume that stands out.</p>
-    </hgroup>
-
-    <figure class="resume-card-visual">
-      <svg viewBox="0 0 260 220" xmlns="http://www.w3.org/2000/svg">
-        <rect x="10" y="10" width="240" height="200" rx="18" fill="#ffffff"/>
-        <circle cx="46" cy="52" r="18" fill="#2563eb"/>
-        <rect x="30" y="86" width="200" height="9" rx="4.5" fill="#e4e7ec"/>
-        <rect x="30" y="106" width="140" height="9" rx="4.5" fill="#e4e7ec"/>
-        <rect x="30" y="126" width="200" height="9" rx="4.5" fill="#e4e7ec"/>
-        <rect x="30" y="150" width="90" height="11" rx="5.5" fill="#2563eb"/>
-        <circle cx="228" cy="188" r="24" fill="#ffffff" stroke="#f1f3f5" stroke-width="1"/>
-        <path d="M228 178v20M218 188h20" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
-      </svg>
-      <figcaption class="sr-only">Illustration of a new resume being created</figcaption>
-    </figure>
-  </aside>
 
 </main>
 
