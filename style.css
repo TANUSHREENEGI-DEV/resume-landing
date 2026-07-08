@@ -834,3 +834,14 @@ blockquote {
     gap: 32px;
   }
 }
+.nav-login-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  margin-right: 4px;
+}
+
+.nav-login-link:hover {
+  color: #4DD4CD;
+}
