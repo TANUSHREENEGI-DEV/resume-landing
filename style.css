@@ -845,3 +845,15 @@ blockquote {
 .nav-login-link:hover {
   color: #4DD4CD;
 }
+.btn-primary {
+  box-shadow: 0 4px 24px rgba(77, 212, 205, 0.4);
+}
+
+.btn-primary:hover {
+  box-shadow: 0 6px 32px rgba(77, 212, 205, 0.55);
+}
+
+.eyebrow {
+  box-shadow: 0 0 16px rgba(77, 212, 205, 0.2);
+  border: 1px solid rgba(77, 212, 205, 0.25);
+}
