@@ -12,7 +12,14 @@ A responsive and modern landing page for a fictional resume builder called **Res
 
 ## 📸 Project Preview
 
+### Landing Page
 ![ResumeFlow Landing Page](images/screenshot.png)
+
+### Login Page
+![ResumeFlow Login Page](images/login.png)
+
+### Sign Up Page
+![ResumeFlow Sign Up Page](images/signup.png)
 
 ---
 
@@ -20,7 +27,7 @@ A responsive and modern landing page for a fictional resume builder called **Res
 
 The objective of this assignment was to recreate a professional landing page by carefully following the given PRD and reference design. I focused on writing clean, semantic HTML, creating a responsive layout, and organizing the code into separate HTML, CSS, and JavaScript files.
 
-After completing the project, I reviewed the feedback, fixed the suggested issues, and updated the project to improve both functionality and code quality.
+After completing the project, I reviewed the feedback, fixed the suggested issues, and updated the project to improve both functionality and code quality. I later extended the project by adding fully functional **Login** and **Sign Up** pages.
 
 ---
 
@@ -38,6 +45,21 @@ After completing the project, I reviewed the feedback, fixed the suggested issue
 - FAQ section using `<details>` and `<summary>`
 - Responsive footer
 - Automatically displays the current year using JavaScript
+- Login page with email/password fields and a show/hide password toggle
+- Sign Up page with name, email, password, and confirm password fields
+- Password visibility toggle built with a single reusable function (`data-target` attribute), so it works on any password field without duplicating code
+
+---
+
+## 🔐 Login & Signup Pages
+
+After finishing the landing page, I designed and built separate `login.html` and `signup.html` pages to match the ResumeFlow brand.
+
+Key decisions while building this part:
+- Kept login and signup as **two separate HTML pages** instead of toggling between them with JavaScript, so the browser back button and URLs behave normally.
+- Used the same CSS variables (`--accent`, `--accent-2`) as the main site so the auth pages stay visually consistent with the landing page.
+- Added a right-side visual panel showing a resume being "scanned" for ATS compatibility, with a subtle animated line and a results card — this ties directly into what ResumeFlow actually does, instead of using a generic decorative graphic.
+- Deliberately kept animations slow and subtle (soft box-shadow glow, a slow-moving scan line) instead of anything flashy, since the goal was a page that looks intentionally designed rather than auto-generated.
 
 ---
 
@@ -56,11 +78,17 @@ After completing the project, I reviewed the feedback, fixed the suggested issue
 ```text
 resume-landing/
 │── index.html
+│── login.html
+│── signup.html
 │── style.css
+│── login.css
 │── script.js
+│── login.js
 │── README.md
 └── images/
     ├── screenshot.png
+    ├── login.png
+    ├── signup.png
     ├── icon-ats.svg
     ├── icon-fast.svg
     ├── icon-mobile.svg
@@ -91,11 +119,10 @@ Some of the things I learned are:
 
 While building this project, I came across a few challenges.
 
-- Matching the layout with the reference design.
-- Maintaining proper spacing and alignment throughout the page.
-- Making every section responsive on different screen sizes.
+- Matching the layout with the reference design and keeping every section responsive.
 - Debugging the JavaScript when the footer year wasn't displaying correctly.
-- Reviewing the project and implementing improvements based on mentor feedback.
+- Designing the login/signup pages to feel polished and original rather than like a generic template, which took a few redesign rounds.
+- A couple of file-renaming and browser caching issues while restructuring the project.
 
 Solving these challenges helped me improve my debugging skills and understand the importance of testing before submitting a project.
 
@@ -109,7 +136,7 @@ If I continue working on this project, I would like to:
 - Turn the landing page into a functional resume builder.
 - Improve accessibility further.
 - Add a dark/light mode toggle.
-- Connect the form with a backend.
+- Connect the login/signup forms to a real backend for authentication.
 
 ---
 
