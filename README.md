@@ -1,0 +1,144 @@
+# ResumeFlow Landing Page
+
+A responsive and modern landing page for a fictional resume builder called **ResumeFlow**. This project was built as part of my internship assignment by following the provided PRD and recreating the reference design as closely as possible using semantic HTML, CSS, and vanilla JavaScript.
+
+---
+
+## 🌐 Live Demo
+
+👉 **[View Live Project](https://tanushreenegi-dev.github.io/resume-landing/)**
+
+---
+
+## 📸 Project Preview
+
+### Landing Page
+![ResumeFlow Landing Page](images/screenshot.png)
+
+### Login Page
+![ResumeFlow Login Page](images/login.png)
+
+### Sign Up Page
+![ResumeFlow Sign Up Page](images/signup.png)
+
+---
+
+## 📖 About the Project
+
+The objective of this assignment was to recreate a professional landing page by carefully following the given PRD and reference design. I focused on writing clean, semantic HTML, creating a responsive layout, and organizing the code into separate HTML, CSS, and JavaScript files.
+
+After completing the project, I reviewed the feedback, fixed the suggested issues, and updated the project to improve both functionality and code quality. I later extended the project by adding fully functional **Login** and **Sign Up** pages.
+
+---
+
+## ✨ Features
+
+- Responsive landing page
+- Sticky navigation bar
+- Hero section with call-to-action
+- Trusted companies section
+- Statistics cards
+- Features section
+- How It Works section
+- Resume template cards
+- Success stories/testimonials
+- FAQ section using `<details>` and `<summary>`
+- Responsive footer
+- Automatically displays the current year using JavaScript
+- Login page with email/password fields and a show/hide password toggle
+- Sign Up page with name, email, password, and confirm password fields
+- Password visibility toggle built with a single reusable function (`data-target` attribute), so it works on any password field without duplicating code
+
+---
+
+## 🔐 Login & Signup Pages
+
+After finishing the landing page, I designed and built separate `login.html` and `signup.html` pages to match the ResumeFlow brand.
+
+Key decisions while building this part:
+- Kept login and signup as **two separate HTML pages** instead of toggling between them with JavaScript, so the browser back button and URLs behave normally.
+- Used the same CSS variables (`--accent`, `--accent-2`) as the main site so the auth pages stay visually consistent with the landing page.
+- Added a right-side visual panel showing a resume being "scanned" for ATS compatibility, with a subtle animated line and a results card — this ties directly into what ResumeFlow actually does, instead of using a generic decorative graphic.
+
+---
+
+## 🛠️ Technologies Used
+
+- HTML5
+- CSS3
+- CSS Grid
+- Flexbox
+- Vanilla JavaScript
+
+---
+
+## 📂 Folder Structure
+
+```text
+resume-landing/
+│── index.html
+│── login.html
+│── signup.html
+│── style.css
+│── login.css
+│── script.js
+│── login.js
+│── README.md
+└── images/
+    ├── screenshot.png
+    ├── login.png
+    ├── signup.png
+    ├── icon-ats.svg
+    ├── icon-fast.svg
+    ├── icon-mobile.svg
+    ├── icon-share.svg
+    └── icon-target.svg
+```
+
+---
+
+## 📚 What I Learned
+
+Working on this project gave me practical experience in building a complete landing page from scratch.
+
+Some of the things I learned are:
+
+- Writing cleaner and more meaningful HTML using semantic elements.
+- Understanding where Flexbox works better and where CSS Grid is more suitable.
+- Organizing CSS into reusable styles instead of repeating code.
+- Using CSS variables to maintain consistent colors and spacing.
+- Making the website responsive using media queries.
+- Keeping HTML, CSS, and JavaScript in separate files for better code organization.
+- Using JavaScript to add small dynamic features like automatically displaying the current year in the footer.
+- Testing the live deployment and fixing issues after receiving feedback.
+
+---
+
+## 🚧 Challenges I Faced
+
+While building this project, I came across a few challenges.
+
+- Matching the layout with the reference design and keeping every section responsive.
+- Debugging the JavaScript when the footer year wasn't displaying correctly.
+- Designing the login/signup pages to feel polished and original rather than like a generic template, which took a few redesign rounds.
+- A couple of file-renaming and browser caching issues while restructuring the project.
+
+Solving these challenges helped me improve my debugging skills and understand the importance of testing before submitting a project.
+
+---
+
+## 🚀 Future Improvements
+
+If I continue working on this project, I would like to:
+
+- Add smooth scrolling animations.
+- Turn the landing page into a functional resume builder.
+- Improve accessibility further.
+- Add a dark/light mode toggle.
+- Connect the login/signup forms to a real backend for authentication.
+
+---
+
+## 🙏 Acknowledgement
+
+This project was completed as part of my internship assignment. It helped me strengthen my understanding of semantic HTML, responsive layouts, CSS Grid, Flexbox, JavaScript basics, debugging, and deploying projects using GitHub Pages.
