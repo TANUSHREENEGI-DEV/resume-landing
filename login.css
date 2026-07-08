@@ -295,7 +295,7 @@ body {
   height: 2px;
   background: linear-gradient(90deg, transparent, var(--accent), transparent);
   top: 8%;
-  animation: scanMove 3.2s linear infinite;
+  animation: scanMove 6s ease-in-out infinite;
 }
 
 @keyframes scanMove {
