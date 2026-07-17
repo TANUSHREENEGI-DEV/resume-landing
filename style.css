@@ -857,3 +857,33 @@ blockquote {
   box-shadow: 0 0 16px rgba(77, 212, 205, 0.2);
   border: 1px solid rgba(77, 212, 205, 0.25);
 }
+
+/* dark mode toggle button */
+.theme-toggle-btn {
+  background: none;
+  border: 1px solid var(--accent, #ccc);
+  border-radius: 20px;
+  padding: 6px 14px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  margin-right: 0.5rem;
+}
+
+/* dark theme colors */
+body[data-theme="dark"] {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+body[data-theme="dark"] .site-header,
+body[data-theme="dark"] .card,
+body[data-theme="dark"] .step-card,
+body[data-theme="dark"] .testimonial-card,
+body[data-theme="dark"] .site-footer {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+}
+
+body[data-theme="dark"] .cta-band {
+  background-color: #1a1a2e;
+}
