@@ -1,11 +1,5 @@
-const yearEl = document.querySelector("#year");
-yearEl.textContent = new Date().getFullYear();
-
-const eyebrowEl = document.querySelector("#hero-eyebrow");
-eyebrowEl.textContent = "✨ AI-Powered Resume Builder";
-// dark mode toggle
-var toggleBtn = document.getElementById("theme-toggle");
-var currentTheme = localStorage.getItem("theme");
+const toggleBtn = document.getElementById("theme-toggle");
+let currentTheme = localStorage.getItem("theme");
 
 if (currentTheme === null) {
   currentTheme = "light";
@@ -20,7 +14,7 @@ if (currentTheme === "dark") {
 }
 
 toggleBtn.addEventListener("click", function () {
-  var theme = document.body.getAttribute("data-theme");
+  const theme = document.body.getAttribute("data-theme");
 
   if (theme === "dark") {
     document.body.setAttribute("data-theme", "light");
